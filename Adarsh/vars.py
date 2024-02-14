@@ -9,20 +9,20 @@ load_dotenv()
 
 class Var(object):
     MULTI_CLIENT = False
-    API_ID = int(getenv('API_ID'))
-    API_HASH = str(getenv('API_HASH'))
-    BOT_TOKEN = str(getenv('BOT_TOKEN'))
-    name = str(getenv('name', 'filetolinkbot'))
+    API_ID = int(getenv('20599643'))
+    API_HASH = str(getenv('bdaa270e2f1293b6ab604d3c8c2df078'))
+    BOT_TOKEN = str(getenv('6799769723:AAEl6i9N9aeh0cLh_9Gb4Mljqbgfecj6JDE'))
+    name = str(getenv('name', 'filestolinksbot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
-    BIN_CHANNEL = int(getenv('BIN_CHANNEL'))
+    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1002062881595'))
     PORT = int(getenv('PORT', 8080))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
-    OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "").split())  
+    OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "629986639").split())  
     NO_PORT = bool(getenv('NO_PORT', False))
-    APP_NAME = str(getenv('APP_NAME'))
-    OWNER_USERNAME = str(getenv('OWNER_USERNAME'))
+    APP_NAME = str(getenv('filestolinksbot'))
+    OWNER_USERNAME = str(getenv('OWNER_USERNAME', 'chillyyyyyyyy'))
     if 'DYNO' in environ:
         ON_HEROKU = True
         APP_NAME = str(getenv('APP_NAME'))
